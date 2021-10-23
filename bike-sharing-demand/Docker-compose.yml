@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  prediction:
+    build: .
+    volumes:
+      - .:/app/src
+    ports:
+      - "5000:80"
